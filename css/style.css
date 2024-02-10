@@ -66,8 +66,7 @@ ul {
     display: flex;
     gap: .6rem;
     list-style-type: none;
-    background-color: transparent;
-    overflow: hidden;
+    background-color: #535353;
 }
 
 li a {
@@ -88,7 +87,7 @@ li a {
 
 li a.active,
 li a:hover {
-    color:  #f9d42c;
+    color:  #a7a7a7;
 }
 
 #click {
@@ -166,7 +165,7 @@ li a:hover {
 }
 
 .social a:hover {
-    color: var(--primary-dark);
+    color: #000000;
     background-color: var(--primary-color);
     box-shadow: 0 0 20px var(--primary-color);
     transition: all .3s ease-in-out;
@@ -182,34 +181,6 @@ li a:hover {
     background-color: #000000;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-
-/* Section 1 End */
-
-
-.dark-mode {
-    background-color: var(--primary-dark);
-    color: #ffffff;
-}
-
-.mode input {
-    display: none;
-}
-
-.dark-mode .logo a, 
-.dark-mode ul li a, 
-.dark-mode .main h3, 
-.dark-mode .main h1 {
-    color: #fff;
-}
-.dark-mode ul li a.active, .dark-mode ul li a:hover {
-    color: var(--primary-color);
-}
-
-.dark-mode header {
-    box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
-    background: var(--primary-dark);
-}
-
 
 
 /* Animation */
@@ -324,7 +295,7 @@ li a:hover {
     }
 
     ul {
-        background: var(--primary-dark);
+        background: #000000;
         width: 100%;
         height: 100vh;
         position: absolute;
@@ -346,13 +317,6 @@ li a:hover {
     #click:checked~ul {
         left: 0%;
         transition: all 0.3s ease;
-    }
-    .dark-mode .menu {
-        color: var(--primary-color);
-    }
-
-    .dark-mode ul {
-        background: var(--primary-dark);
     }
 
     .mode {
